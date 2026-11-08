@@ -755,9 +755,8 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 
 
 <script>
-document.addEventListener('toggle',function(e){if(!e.target.matches('.demo-details'))return;const d=e.target;if(!d.open)return;d.querySelectorAll('video').forEach(v=>{v.currentTime=0;v.play().catch(()=>{});});});
-document.addEventListener('timeupdate',function(e){const v=e.target;if(v.tagName==='VIDEO'&&v.closest('.demo-details')&&v.currentTime>=20){v.pause();v.currentTime=20;}} ,true);
-document.addEventListener('toggle',function(e){if(!e.target.matches('.demo-details')||e.target.open)return;e.target.querySelectorAll('video').forEach(v=>v.pause());});
+document.querySelectorAll('.demo-details video').forEach(function(video){video.addEventListener('timeupdate',function(){if(video.currentTime>=20){video.pause();video.currentTime=20;}});});
+document.querySelectorAll('.demo-details').forEach(function(panel){panel.addEventListener('toggle',function(){if(!panel.open)panel.querySelectorAll('video').forEach(function(video){video.pause();});});});
 </script>
 
 </body></html>
