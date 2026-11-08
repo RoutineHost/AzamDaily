@@ -114,6 +114,8 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 
 /* Lazy-loaded short exercise demonstrations */
 .demo-player{margin:10px 0 14px}.demo-play{display:inline-flex;align-items:center;gap:10px;border:0;border-radius:999px;padding:10px 16px;background:#203b5a;color:#fff;font:700 14px inherit;cursor:pointer;box-shadow:0 3px 10px #17283e22}.demo-play:hover{background:#315777}.play-icon{display:grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#f4c84a;color:#17283e;font-size:13px}.demo-play small{font-weight:500;color:#dce7f0}.demo-video{display:block;width:min(100%,420px);max-height:240px;margin-top:10px;border-radius:14px;background:#101820}.demo-status{font-size:12px;color:#637083;margin:5px 0 0;min-height:1em}
+
+.demo-details{margin:10px 0 14px;padding:10px 12px;border:1px solid #dce3eb;border-radius:13px;background:#f8fafc}.demo-details summary{cursor:pointer;font-weight:800;color:#203b5a;list-style:none}.demo-details summary::-webkit-details-marker{display:none}.demo-details summary:before{content:"▶";display:inline-grid;place-items:center;margin-right:9px;width:25px;height:25px;border-radius:50%;background:#f4c84a;color:#17283e;font-size:11px}.demo-details[open] summary:before{content:"▼"}.demo-details video{display:block;width:min(100%,420px);max-height:260px;margin-top:10px;border-radius:12px;background:#101820}.video-frame{position:relative;width:min(100%,480px);aspect-ratio:16/9;background:#101820;border-radius:12px;overflow:hidden;margin-top:10px}.video-frame iframe{width:100%;height:100%;border:0}
 </style>
 </head>
 <body>
@@ -178,7 +180,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 </div>
 </article>
 <article class="exercise">
-<div class="demo-player" data-exercise="dumbbell shoulder press"><button class="demo-play" type="button" aria-label="Play Dumbbell shoulder press demonstration"><span class="play-icon">▶</span><span>Play demo <small>· up to 20 sec</small></span></button><video class="demo-video" controls playsinline preload="none" hidden></video><p class="demo-status" aria-live="polite"></p></div>
+<details class="demo-details"><summary>▶ Watch this exercise (20-sec demo)</summary><div class="video-frame"><iframe loading="lazy" title="Dumbbell shoulder press demonstration" src="https://www.youtube-nocookie.com/embed/_RlRDWO2jfg?start=0&end=20&rel=0&modestbranding=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p class="demo-caption">Short exercise demonstration for Dumbbell shoulder press. Video appears only when opened.</p></details>
 <div class="exercise-copy">
 <h4>Dumbbell shoulder press</h4>
 <div class="dose">3 × 8–15</div><div class="exercise-time">⏱ Estimated time: 4–6 min (including rest)</div>
@@ -211,7 +213,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 </div>
 </article>
 <article class="exercise">
-<div class="demo-player" data-exercise="plank"><button class="demo-play" type="button" aria-label="Play Plank demonstration"><span class="play-icon">▶</span><span>Play demo <small>· up to 20 sec</small></span></button><video class="demo-video" controls playsinline preload="none" hidden></video><p class="demo-status" aria-live="polite"></p></div>
+<details class="demo-details"><summary>▶ Watch this exercise (20-sec demo)</summary><div class="video-frame"><iframe loading="lazy" title="Plank demonstration" src="https://www.youtube-nocookie.com/embed/pSHjTRCQxIw?start=0&end=20&rel=0&modestbranding=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p class="demo-caption">Short exercise demonstration for Plank. Video appears only when opened.</p></details>
 <div class="exercise-copy">
 <h4>Plank</h4>
 <div class="dose">2 × 20–40 sec</div><div class="exercise-time">⏱ Estimated time: 2–3 min</div>
@@ -328,7 +330,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 </div>
 </article>
 <article class="exercise">
-<div class="demo-player" data-exercise="plank"><button class="demo-play" type="button" aria-label="Play Plank demonstration"><span class="play-icon">▶</span><span>Play demo <small>· up to 20 sec</small></span></button><video class="demo-video" controls playsinline preload="none" hidden></video><p class="demo-status" aria-live="polite"></p></div>
+<details class="demo-details"><summary>▶ Watch this exercise (20-sec demo)</summary><div class="video-frame"><iframe loading="lazy" title="Plank demonstration" src="https://www.youtube-nocookie.com/embed/pSHjTRCQxIw?start=0&end=20&rel=0&modestbranding=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p class="demo-caption">Short exercise demonstration for Plank. Video appears only when opened.</p></details>
 <div class="exercise-copy">
 <h4>Plank</h4>
 <div class="dose">2 × 20–30 sec</div><div class="exercise-time">⏱ Estimated time: 2–3 min</div>
@@ -506,7 +508,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 </div>
 </article>
 <article class="exercise">
-<div class="demo-player" data-exercise="dumbbell shoulder press"><button class="demo-play" type="button" aria-label="Play Dumbbell shoulder press demonstration"><span class="play-icon">▶</span><span>Play demo <small>· up to 20 sec</small></span></button><video class="demo-video" controls playsinline preload="none" hidden></video><p class="demo-status" aria-live="polite"></p></div>
+<details class="demo-details"><summary>▶ Watch this exercise (20-sec demo)</summary><div class="video-frame"><iframe loading="lazy" title="Dumbbell shoulder press demonstration" src="https://www.youtube-nocookie.com/embed/_RlRDWO2jfg?start=0&end=20&rel=0&modestbranding=1" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div><p class="demo-caption">Short exercise demonstration for Dumbbell shoulder press. Video appears only when opened.</p></details>
 <div class="exercise-copy">
 <h4>Dumbbell shoulder press</h4>
 <div class="dose">2 × 8–12</div><div class="exercise-time">⏱ Estimated time: 4–6 min (including rest)</div>
@@ -751,14 +753,11 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <div class="footer">General fitness education, not a medical diagnosis or personalised clinical diet. Stop if an exercise causes sharp pain. If you have a medical condition or have been advised to restrict protein, salt or fluids, check with a clinician.</div>
 </div>
 
+
 <script>
-(()=>{
- let exerciseDataPromise;
- const api='https://exercise-database.zenithfits.com/api/v1/exercises?limit=317';
- function getData(){if(!exerciseDataPromise){exerciseDataPromise=fetch(api).then(r=>{if(!r.ok)throw new Error('Demo library is temporarily unavailable');return r.json()}).then(j=>j.data||[])}return exerciseDataPromise}
- function norm(v){return (v||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim()}
- function choose(items,q){const n=norm(q);let best=null,score=0;for(const x of items){const name=norm(x.name);let z=0;if(name===n)z=100;else if(name.includes(n)||n.includes(name))z=70;else{const a=new Set(n.split(' ')),b=new Set(name.split(' '));z=[...a].filter(t=>b.has(t)).length/Math.max(a.size,b.size)*50}if(z>score){score=z;best=x}}return score>=25?best:null}
- document.addEventListener('click',async e=>{const btn=e.target.closest('.demo-play');if(!btn)return;const box=btn.closest('.demo-player'),video=box.querySelector('video'),status=box.querySelector('.demo-status');if(video.src){video.hidden=false;video.play().catch(()=>{});return}btn.disabled=true;status.textContent='Loading short demonstration…';try{const items=await getData();const item=choose(items,box.dataset.exercise);const url=item?.videos?.male||item?.videos?.female;if(!url)throw new Error('No matching video found');video.src=url;video.hidden=false;video.addEventListener('timeupdate',()=>{if(video.currentTime>=20){video.pause();video.currentTime=20;status.textContent='Demo finished (20-second limit).'}},{once:false});video.addEventListener('loadedmetadata',()=>{if(Number.isFinite(video.duration)&&video.duration>20)status.textContent='Short demo · playback capped at 20 seconds';else status.textContent='Short exercise demonstration';},{once:true});await video.play();btn.textContent='▶ Replay demo';}catch(err){status.textContent='Could not load the demo right now. Please try again.';btn.disabled=false;console.error(err)}});
-})();
+document.addEventListener('toggle',function(e){if(!e.target.matches('.demo-details'))return;const d=e.target;if(!d.open)return;d.querySelectorAll('video').forEach(v=>{v.currentTime=0;v.play().catch(()=>{});});});
+document.addEventListener('timeupdate',function(e){const v=e.target;if(v.tagName==='VIDEO'&&v.closest('.demo-details')&&v.currentTime>=20){v.pause();v.currentTime=20;}} ,true);
+document.addEventListener('toggle',function(e){if(!e.target.matches('.demo-details')||e.target.open)return;e.target.querySelectorAll('video').forEach(v=>v.pause());});
 </script>
+
 </body></html>
