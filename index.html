@@ -118,6 +118,8 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 .demo-details{margin:10px 0 14px;padding:10px 12px;border:1px solid #dce3eb;border-radius:13px;background:#f8fafc}.demo-details summary{cursor:pointer;font-weight:800;color:#203b5a;list-style:none}.demo-details summary::-webkit-details-marker{display:none}.demo-details summary:before{content:"▶";display:inline-grid;place-items:center;margin-right:9px;width:25px;height:25px;border-radius:50%;background:#f4c84a;color:#17283e;font-size:11px}.demo-details[open] summary:before{content:"▼"}.demo-details video{display:block;width:min(100%,420px);max-height:260px;margin-top:10px;border-radius:12px;background:#101820}.video-frame{position:relative;width:min(100%,480px);aspect-ratio:16/9;background:#101820;border-radius:12px;overflow:hidden;margin-top:10px}.video-frame iframe{width:100%;height:100%;border:0}
 
 .demo-details{margin:12px 0 14px;padding:12px 14px;border:1px solid #d7dfeb;border-radius:14px;background:#f8fafc}.demo-details summary{cursor:pointer;font-weight:800;color:#203b5a;list-style:none;font-size:15px}.demo-details summary::-webkit-details-marker{display:none}.demo-details summary:before{content:"▶";display:inline-grid;place-items:center;margin-right:10px;width:30px;height:30px;border-radius:50%;background:#f4c84a;color:#17283e;font-size:12px}.demo-details[open] summary:before{content:"▼"}.male-demo-stage{width:100%;max-width:760px;margin-top:12px}.male-demo-stage video{display:block;width:100%;max-height:480px;aspect-ratio:16/9;object-fit:contain;border-radius:13px;background:#111}.male-demo-loading{padding:24px;text-align:center;background:#eef2f7;border-radius:12px;color:#43536a;font-size:14px}.demo-caption{font-size:12px;color:#637083;margin:8px 0 0}
+
+.demo-details{grid-column:1/-1;width:100%;margin:8px 0 2px;padding:12px 14px;border:1px solid #d7dfeb;border-radius:14px;background:#f8fafc}.demo-details summary{cursor:pointer;font-weight:800;color:#203b5a;list-style:none;font-size:15px}.demo-details summary::-webkit-details-marker{display:none}.demo-details summary:before{content:"▶";display:inline-grid;place-items:center;margin-right:10px;width:30px;height:30px;border-radius:50%;background:#f4c84a;color:#17283e;font-size:12px}.demo-details[open] summary:before{content:"▼"}.male-demo-stage{width:100%;max-width:820px;margin:12px auto 0}.male-demo-stage video{display:block;width:100%;height:auto;max-height:560px;aspect-ratio:16/9;object-fit:contain;border-radius:14px;background:#101820}.male-demo-loading{padding:24px;text-align:center;background:#eef2f7;border-radius:12px;color:#43536a;font-size:14px}.demo-caption{font-size:12px;color:#637083;margin:8px 0 0}
 </style>
 </head>
 <body>
@@ -180,7 +182,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A compound pushing exercise that builds upper-body strength with no extra equipment.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Strengthens chest muscles.</li><li>Works triceps.</li><li>Trains the front shoulders.</li><li>Challenges core bracing.</li><li>Scales easily from wall to full push-ups.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="push up"><summary>▶ Watch Push-ups · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -191,7 +193,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A useful overhead press for shoulder and arm development.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Trains the deltoids.</li><li>Works triceps.</li><li>Builds overhead strength.</li><li>Challenges standing core stability.</li><li>Progresses with reps or heavier weights.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="shoulder press"><summary>▶ Watch Dumbbell shoulder press · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -202,7 +204,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A focused side-shoulder exercise to complement pressing.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Targets side deltoids.</li><li>Can contribute to broader-looking shoulders.</li><li>Builds shoulder endurance.</li><li>Adds work not fully covered by push-ups.</li><li>Works well with light dumbbells and control.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="dumbbell lateral raise"><summary>▶ Watch Lateral raises · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -213,7 +215,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A compound pushing exercise that builds upper-body strength with no extra equipment.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Strengthens chest muscles.</li><li>Works triceps.</li><li>Trains the front shoulders.</li><li>Challenges core bracing.</li><li>Scales easily from wall to full push-ups.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="push up"><summary>▶ Watch Push-ups · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -224,7 +226,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A core stability exercise that trains bracing rather than repeated bending.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Trains abdominal bracing.</li><li>Works obliques and trunk stabilisers.</li><li>Challenges shoulder support.</li><li>Practises body alignment.</li><li>Requires no equipment.</li></ul></details>
 </div>
-</article></div>
+<details class="demo-details" data-exercise="plank"><summary>▶ Watch Plank · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article></div>
 <div class="food"><strong>Optional food idea</strong><p>Optional meal idea: eggs or paneer + roti/oats + vegetables. Add milk or a protein shake if you need help reaching your daily protein target.</p></div>
 <div class="meal-rhythm">
 <h4>Daily food reminders — keep these in mind</h4>
@@ -255,7 +257,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A high-value vertical pull for back and arm strength; use assistance as needed.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Trains lats for back width.</li><li>Works biceps and upper back.</li><li>Builds grip strength.</li><li>Challenges trunk control.</li><li>Develops vertical pulling strength.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="pull up"><summary>▶ Watch Pull-ups / assisted pull-ups · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div class="no-gif">Demonstration unavailable</div>
 <div class="exercise-copy">
@@ -266,7 +268,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A horizontal pull that trains the back even before full pull-ups are possible.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Works lats and mid-back.</li><li>Trains rear shoulders.</li><li>Works biceps as helpers.</li><li>Builds one-arm coordination.</li><li>Supports strength for pulling tasks.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="dumbbell row"><summary>▶ Watch Dumbbell rows · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -277,7 +279,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> Direct biceps work to complement pull-ups and rows.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Targets biceps.</li><li>Trains elbow-flexion strength.</li><li>Adds direct arm volume.</li><li>Easy to track and progress.</li><li>Works with your home dumbbells.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="dumbbell biceps curl"><summary>▶ Watch Biceps curls · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -288,7 +290,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A neutral-grip curl that also trains muscles of the forearm and upper arm.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Works brachialis.</li><li>Works brachioradialis in the forearm.</li><li>Builds elbow-flexion strength.</li><li>Complements regular curls.</li><li>Can support carrying and lifting tasks.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="hammer curl"><summary>▶ Watch Hammer curls · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -299,7 +301,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> An optional grip and hanging drill, not a full back workout.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Builds grip endurance.</li><li>Practises the pull-up starting position.</li><li>Trains forearms isometrically.</li><li>Builds tolerance for overhead hanging.</li><li>Offers a simple progress measure.</li></ul></details>
 </div>
-</article></div>
+<details class="demo-details" data-exercise="dead hang"><summary>▶ Watch Dead hangs · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article></div>
 <div class="food"><strong>Optional food idea</strong><p>Optional meal idea: chicken or fish + rice/roti + vegetables. Dal or roasted chana can add protein and fibre.</p></div>
 <div class="meal-rhythm">
 <h4>Daily food reminders — keep these in mind</h4>
@@ -341,7 +343,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A core stability exercise that trains bracing rather than repeated bending.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Trains abdominal bracing.</li><li>Works obliques and trunk stabilisers.</li><li>Challenges shoulder support.</li><li>Practises body alignment.</li><li>Requires no equipment.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="plank"><summary>▶ Watch Plank · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -352,7 +354,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A beginner-friendly hip-extension exercise for glute strength.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Strengthens glute muscles.</li><li>Trains hip extension.</li><li>Adds posterior-chain work.</li><li>Improves awareness of glute engagement.</li><li>Can progress with pauses or added load.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="glute bridge"><summary>▶ Watch Glute bridges · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div class="no-gif">Demonstration unavailable</div>
 <div class="exercise-copy">
@@ -363,7 +365,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A gentle neck-posture drill, not a neck-fat reduction exercise.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Practises neutral head position.</li><li>Gently activates deep neck flexors.</li><li>Builds awareness of forward-head posture.</li><li>Needs no equipment.</li><li>Fits into short desk breaks.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="chin tuck"><summary>▶ Watch Chin tucks · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div class="no-gif">Demonstration unavailable</div>
 <div class="exercise-copy">
@@ -378,11 +380,11 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <article class="exercise">
 <div aria-hidden="true" class="exercise-placeholder" style="height:105px;border-radius:10px;background:#f6f7f8;display:grid;place-items:center;color:#637083;font-size:12px;text-align:center;padding:8px">Core control<br/>slow reps</div>
 <div><h4>Dead bugs</h4><div class="dose">2 sets × 8 each side</div><div class="exercise-time">⏱ Estimated time: 3–4 min</div><p>Keep your lower back gently supported; move opposite arm and leg slowly. Stop if your back arches or you feel pain.</p><div class="rating">★★★★☆ <small>4/5 · Core control</small></div><p class="why">Selected to train deep abdominal control without adding much fatigue.</p></div>
-</article>
+<details class="demo-details" data-exercise="dead bug"><summary>▶ Watch Dead bugs · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div aria-hidden="true" class="exercise-placeholder" style="height:105px;border-radius:10px;background:#f6f7f8;display:grid;place-items:center;color:#637083;font-size:12px;text-align:center;padding:8px">Side core<br/>hold steady</div>
 <div><h4>Side plank (knees bent if needed)</h4><div class="dose">2 sets × 15–25 seconds each side</div><div class="exercise-time">⏱ Estimated time: 2–3 min</div><p>Keep your body in a straight line and breathe normally. Use the bent-knee version if the full version is too difficult.</p><div class="rating">★★★★☆ <small>4/5 · Side core</small></div><p class="why">Builds side-core strength and trunk stability; it does not directly burn love-handle fat.</p></div>
-</article>
+<details class="demo-details" data-exercise="side plank"><summary>▶ Watch Side plank (knees bent if needed) · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 </div><div class="face-neck-mini" style="margin-top:14px;padding:13px 15px;border-radius:14px;background:#f5f3ff;border:1px solid #e4defa">
 <p class="exercise-time">⏱ Estimated time: 3–4 minutes total.</p><h4 style="margin:0 0 7px">Face &amp; neck posture — 3 to 4 minutes</h4>
 <ul style="margin:6px 0 0;padding-left:18px">
@@ -422,7 +424,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A foundational multi-joint leg exercise.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Works quadriceps.</li><li>Trains glutes and adductors.</li><li>Challenges core stability.</li><li>Builds sit-to-stand strength.</li><li>Can progress with dumbbells or harder variations.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="bodyweight squat"><summary>▶ Watch Squats · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -433,7 +435,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A single-leg exercise that develops leg strength and coordination.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Works quadriceps.</li><li>Strengthens glutes.</li><li>Trains balance and coordination.</li><li>Helps reveal side-to-side differences.</li><li>Builds strength for stepping and stairs.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="reverse lunge"><summary>▶ Watch Reverse lunges · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -444,7 +446,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A beginner-friendly hip-extension exercise for glute strength.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Strengthens glute muscles.</li><li>Trains hip extension.</li><li>Adds posterior-chain work.</li><li>Improves awareness of glute engagement.</li><li>Can progress with pauses or added load.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="glute bridge"><summary>▶ Watch Glute bridges · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -455,7 +457,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A core exercise; straps may reduce grip limitation but must be securely attached.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Trains abdominal muscles.</li><li>Challenges pelvic control.</li><li>Works hip flexors.</li><li>Builds hanging-position control.</li><li>Can progress toward straighter-leg raises.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="hanging knee raise"><summary>▶ Watch Hanging knee raises · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div class="no-gif">Demonstration unavailable</div>
 <div class="exercise-copy">
@@ -466,7 +468,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> Direct calf training to complement squats and lunges.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Works gastrocnemius.</li><li>Works soleus, especially with bent knees.</li><li>Builds ankle push-off strength.</li><li>Supports walking and stair climbing.</li><li>Easy to progress with pauses or load.</li></ul></details>
 </div>
-</article></div>
+<details class="demo-details" data-exercise="calf raise"><summary>▶ Watch Calf raises · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article></div>
 <div class="food"><strong>Optional food idea</strong><p>Optional meal idea: paneer or chicken + roti/rice + vegetables. Include dal if the meal is short on protein.</p></div>
 <div class="meal-rhythm">
 <h4>Daily food reminders — keep these in mind</h4>
@@ -497,7 +499,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A compound pushing exercise that builds upper-body strength with no extra equipment.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Strengthens chest muscles.</li><li>Works triceps.</li><li>Trains the front shoulders.</li><li>Challenges core bracing.</li><li>Scales easily from wall to full push-ups.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="push up"><summary>▶ Watch Push-ups · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div class="no-gif">Demonstration unavailable</div>
 <div class="exercise-copy">
@@ -508,7 +510,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A horizontal pull that trains the back even before full pull-ups are possible.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Works lats and mid-back.</li><li>Trains rear shoulders.</li><li>Works biceps as helpers.</li><li>Builds one-arm coordination.</li><li>Supports strength for pulling tasks.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="dumbbell row"><summary>▶ Watch Dumbbell rows · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -519,7 +521,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A useful overhead press for shoulder and arm development.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Trains the deltoids.</li><li>Works triceps.</li><li>Builds overhead strength.</li><li>Challenges standing core stability.</li><li>Progresses with reps or heavier weights.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="shoulder press"><summary>▶ Watch Dumbbell shoulder press · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 
 <div class="exercise-copy">
@@ -530,7 +532,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> Direct biceps work to complement pull-ups and rows.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Targets biceps.</li><li>Trains elbow-flexion strength.</li><li>Adds direct arm volume.</li><li>Easy to track and progress.</li><li>Works with your home dumbbells.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="dumbbell biceps curl"><summary>▶ Watch Biceps curls · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div class="no-gif">Demonstration unavailable</div>
 <div class="exercise-copy">
@@ -583,7 +585,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <p class="why"><b>Why selected:</b> A simple upper-back activation drill for desk breaks.</p>
 <details class="benefits"><summary>5 benefits</summary><ul><li>Activates muscles between shoulder blades.</li><li>Builds shoulder-position awareness.</li><li>Encourages gentle upper-back movement.</li><li>Requires no equipment.</li><li>Easy to repeat during work breaks.</li></ul></details>
 </div>
-</article>
+<details class="demo-details" data-exercise="shoulder blade squeeze"><summary>▶ Watch Shoulder blade squeezes · Male demo (20 sec)</summary><div class="male-demo-stage"><div class="male-demo-loading">Tap to load male exercise demonstration.</div><video controls playsinline preload="none" hidden></video></div><p class="demo-caption">Male exercise demonstration only · playback limited to 20 seconds</p></details></article>
 <article class="exercise">
 <div class="no-gif">Demonstration unavailable</div>
 <div class="exercise-copy">
@@ -757,15 +759,7 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 
 
 <script>
-(function(){
- const API='https://exercise-database.zenithfits.com/api/v1/exercises?limit=317';
- const aliases={"push up":["push up","push-up","standard push-up","pushups"],"dumbbell lateral raise":["dumbbell lateral raise","lateral raise"],"pull up":["pull-up","pull up","band assisted pull-up"],"dumbbell biceps curl":["dumbbell biceps curl","biceps curl"],"hammer curl":["dumbbell cross body hammer curl","hammer curl"],"dead hang":["dead hang","deadhang"],"glute bridge":["glute bridge","hip raise bridge"],"bodyweight squat":["bodyweight squat","squat"],"reverse lunge":["reverse lunge","dumbbell lunge"],"hanging knee raise":["hanging knee raise","hanging leg raise"],"plank":["plank","forearm plank"],"dumbbell row":["dumbbell bent-over row","bent-over dumbbell row","dumbbell row"]};
- let allExercises=null,loadPromise=null;
- const norm=s=>(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
- function loadLibrary(){if(!loadPromise)loadPromise=fetch(API).then(r=>{if(!r.ok)throw new Error('Male demo library unavailable');return r.json()}).then(j=>{if(!j||!Array.isArray(j.data))throw new Error('Unexpected video library response');allExercises=j.data;return allExercises});return loadPromise}
- function findExercise(list,slug){const names=aliases[slug]||[slug];for(const wanted of names){const exact=list.find(x=>norm(x.name)===norm(wanted));if(exact&&exact.videos&&exact.videos.male)return exact}let best=null,score=0;for(const x of list){const candidate=norm(x.name);for(const wanted of names){const a=norm(wanted),parts=a.split(' ');let n=parts.filter(p=>candidate.includes(p)).length/Math.max(parts.length,1);if(n>score&&x.videos&&x.videos.male){score=n;best=x}}}return score>=.75?best:null}
- document.querySelectorAll('.demo-details[data-exercise]').forEach(panel=>{panel.addEventListener('toggle',async()=>{if(!panel.open)return;const video=panel.querySelector('video'),loading=panel.querySelector('.male-demo-loading');if(video.dataset.loaded==='yes')return;try{loading.textContent='Loading male exercise video…';const list=await loadLibrary();const item=findExercise(list,panel.dataset.exercise);if(!item||!item.videos||!item.videos.male)throw new Error('No male demonstration is available for this exact movement.');video.src=item.videos.male;video.hidden=false;video.dataset.loaded='yes';video.addEventListener('timeupdate',()=>{if(video.currentTime>=20){video.pause();video.currentTime=20;} });loading.remove();}catch(err){loading.textContent='Male demo could not be loaded for this exercise right now. Please try again later.';console.warn(err)}});panel.addEventListener('toggle',()=>{if(!panel.open)panel.querySelector('video')?.pause()})});
-})();
+(function(){const API='https://exercise-database.zenithfits.com/api/v1/exercises?limit=317';const aliases={"push up":["Push-up","Push Up","Standard Push-Up"],"shoulder press":["Dumbbell Alternating Shoulder Press","Dumbbell Shoulder Press","Shoulder Press"],"dumbbell lateral raise":["Dumbbell Lateral Raise","Lateral Raise"],"plank":["Forearm Plank","Plank"],"pull up":["Pull-Up","Band Assisted Pull-up","Chin-ups (narrow parallel grip)"],"dumbbell row":["Dumbbell Bent-Over Row","Dumbbell Row"],"dumbbell biceps curl":["Dumbbell Biceps Curl","Biceps Curl"],"hammer curl":["Dumbbell Cross Body Hammer Curl","Dumbbell Hammer Curl","Hammer Curl"],"dead hang":["Dead Hang","Deadhang"],"glute bridge":["Glute Bridge","Hip Raise Bridge"],"bodyweight squat":["Bodyweight Squat","Squat"],"reverse lunge":["Reverse Lunge","Dumbbell Lunge"],"hanging knee raise":["Hanging Knee Raise","Hanging Leg Raise"],"calf raise":["Standing Calf Raise","Calf Raise"],"dead bug":["Dead Bug"],"side plank":["Side Plank"],"chin tuck":["Chin Tuck"],"shoulder blade squeeze":["Shoulder Blade Squeeze","Scapular Retraction"]};let promise=null;const norm=s=>(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();function library(){if(!promise)promise=fetch(API).then(r=>{if(!r.ok)throw Error('Male video library unavailable');return r.json()}).then(j=>{if(!Array.isArray(j.data))throw Error('Invalid exercise library response');return j.data});return promise}function match(list,slug){const wants=aliases[slug]||[slug];for(const w of wants){const x=list.find(e=>norm(e.name)===norm(w)&&e.videos&&e.videos.male);if(x)return x}let best=null,score=0;for(const e of list){if(!e.videos||!e.videos.male)continue;const n=norm(e.name);for(const w of wants){const a=norm(w),tokens=a.split(' ');const z=tokens.filter(t=>n.includes(t)).length/tokens.length;if(z>score){score=z;best=e}}}return score>=.75?best:null}document.querySelectorAll('.demo-details[data-exercise]').forEach(d=>{d.addEventListener('toggle',async()=>{if(!d.open)return;const v=d.querySelector('video'),msg=d.querySelector('.male-demo-loading');if(v.dataset.loaded)return;msg.textContent='Loading male demonstration…';try{const list=await library(),e=match(list,d.dataset.exercise);if(!e||!e.videos.male)throw Error('No male clip found for this movement');v.src=e.videos.male;v.hidden=false;v.dataset.loaded='1';v.addEventListener('timeupdate',()=>{if(v.currentTime>=20){v.pause();v.currentTime=20}});msg.remove()}catch(err){msg.textContent='Male demonstration unavailable right now. No female clip will be shown.';console.warn(err)}});d.addEventListener('toggle',()=>{if(!d.open)d.querySelector('video')?.pause()})})})();
 </script>
 
 </body></html>
