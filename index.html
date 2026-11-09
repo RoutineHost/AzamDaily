@@ -120,6 +120,54 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 .demo-details{margin:12px 0 14px;padding:12px 14px;border:1px solid #d7dfeb;border-radius:14px;background:#f8fafc}.demo-details summary{cursor:pointer;font-weight:800;color:#203b5a;list-style:none;font-size:15px}.demo-details summary::-webkit-details-marker{display:none}.demo-details summary:before{content:"▶";display:inline-grid;place-items:center;margin-right:10px;width:30px;height:30px;border-radius:50%;background:#f4c84a;color:#17283e;font-size:12px}.demo-details[open] summary:before{content:"▼"}.male-demo-stage{width:100%;max-width:760px;margin-top:12px}.male-demo-stage video{display:block;width:100%;max-height:480px;aspect-ratio:16/9;object-fit:contain;border-radius:13px;background:#111}.male-demo-loading{padding:24px;text-align:center;background:#eef2f7;border-radius:12px;color:#43536a;font-size:14px}.demo-caption{font-size:12px;color:#637083;margin:8px 0 0}
 
 .demo-details{grid-column:1/-1;width:100%;margin:8px 0 2px;padding:12px 14px;border:1px solid #d7dfeb;border-radius:14px;background:#f8fafc}.demo-details summary{cursor:pointer;font-weight:800;color:#203b5a;list-style:none;font-size:15px}.demo-details summary::-webkit-details-marker{display:none}.demo-details summary:before{content:"▶";display:inline-grid;place-items:center;margin-right:10px;width:30px;height:30px;border-radius:50%;background:#f4c84a;color:#17283e;font-size:12px}.demo-details[open] summary:before{content:"▼"}.male-demo-stage{width:100%;max-width:820px;margin:12px auto 0}.male-demo-stage video{display:block;width:100%;height:auto;max-height:560px;aspect-ratio:16/9;object-fit:contain;border-radius:14px;background:#101820}.male-demo-loading{padding:24px;text-align:center;background:#eef2f7;border-radius:12px;color:#43536a;font-size:14px}.demo-caption{font-size:12px;color:#637083;margin:8px 0 0}
+
+/* Compact independent workout and weekly-task selectors */
+.navbox{display:grid;gap:8px;padding:9px 10px}
+.nav-caption{font-size:10px;font-weight:900;letter-spacing:.16em;color:#8b6a08;padding:0 2px 2px}
+.weekly-caption{margin-top:2px;padding-top:7px;border-top:1px solid #eee3c3}
+.navbox .daynav a{padding:5px 2px;border-radius:9px;border-width:1px;box-shadow:none}
+.navbox .daynav a span{font-size:12px;line-height:1.15}
+.navbox .daynav a small{font-size:9px}
+.navbox .nav-emoji{font-size:15px;margin-bottom:1px}
+.task-daynav a{background:#fff9e8}
+.task-hub,.task-week{background:#fff;border:1px solid #e8dfc7;border-radius:20px;padding:18px;margin:24px 0;box-shadow:0 8px 24px #26344a0c;scroll-margin-top:150px}
+.task-hub{border-top:4px solid #f2c84b}
+.task-week{border-top:4px solid #243b53}
+.task-hub-head,.task-week-title{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:12px}
+.task-hub h2,.task-week h2{margin:2px 0;color:#1d2c3d}
+.task-hub p,.task-week-title p{font-size:13px;color:#697586;margin:4px 0 0}
+.task-kicker{font-size:10px;letter-spacing:.15em;font-weight:900;color:#a17a08}
+.task-reset{border:1px solid #e6d69e;background:#fff7d9;color:#55420a;border-radius:9px;padding:7px 10px;font-size:11px;font-weight:800;white-space:nowrap}
+.task-list{display:grid;gap:0}
+.task-row{display:flex;align-items:center;gap:10px;padding:10px 8px;border-bottom:1px solid #edf0f3;min-width:0;cursor:pointer}
+.task-row:last-child{border-bottom:0}
+.task-row input{width:18px;height:18px;accent-color:#d5a900;flex:0 0 auto}
+.task-row span{display:flex;flex-direction:column;gap:2px;min-width:0;flex:1}
+.task-row b{font-size:13px;color:#263548;font-weight:700}
+.task-row small{font-size:11px;color:#778293}
+.task-row em{font-size:10px;font-style:normal;font-weight:800;color:#765a08;background:#fff4cb;border-radius:99px;padding:5px 8px;white-space:nowrap}
+.task-row:has(input:checked) b,.task-row:has(input:checked) small{text-decoration:line-through;color:#8a929c}
+.task-day{background:#fffdf8;border:1px solid #eee5ce;border-radius:15px;padding:13px 15px;margin:13px 0;scroll-margin-top:155px}
+.task-day h3{display:flex;align-items:center;justify-content:space-between;gap:8px;margin:0 0 4px;font-size:18px;color:#1d3048}
+.task-day h3 small{font-size:10px;font-weight:700;color:#9b7816;background:#fff2c5;padding:5px 8px;border-radius:99px}
+.task-day .task-row{padding:8px 5px}
+.task-day .task-row b{font-size:12px}
+@media(max-width:700px){
+ .navbox{padding:7px 6px;gap:6px}
+ .navbox .daynav{grid-template-columns:repeat(7,minmax(0,1fr));gap:3px}
+ .navbox .daynav a{padding:5px 1px}
+ .navbox .daynav a span{font-size:11px}
+ .navbox .daynav a small{font-size:8px}
+ .navbox .nav-emoji{font-size:13px}
+ .task-hub,.task-week{padding:13px;margin:17px 0}
+ .task-hub-head,.task-week-title{align-items:flex-start}
+ .task-reset{padding:6px 8px;font-size:10px}
+ .task-day{padding:10px}
+ .task-day h3{font-size:16px}
+ .task-row{gap:8px;padding:9px 4px}
+ .task-row b{font-size:12px}
+}
+
 </style>
 </head>
 <body>
@@ -129,7 +177,9 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <h1>Build strength.<br/>Move every day.</h1>
 <p>A simple seven-day routine for a stronger chest, back, shoulders, arms and legs, a stronger core, better posture and a healthier waist.</p>
 <div class="pills"><span class="pill">7-day movement plan</span><span class="pill">4 strength days</span><span class="pill">GIF demonstrations included</span><span class="pill">Optional food ideas</span></div>
-</header><div class="navbox"><nav aria-label="Jump to day" class="daynav"><a aria-label="💪 Sunday — Push-up day" href="#sunday"><span aria-hidden="true" class="nav-emoji">💪</span> <span>Sun</span><small>Sunday</small></a><a aria-label="🧗 Monday — Pull-up day" href="#monday"><span aria-hidden="true" class="nav-emoji">🧗</span> <span>Mon</span><small>Monday</small></a><a aria-label="🚶 Tuesday — Walk &amp; core day" href="#tuesday"><span aria-hidden="true" class="nav-emoji">🚶</span> <span>Tue</span><small>Tuesday</small></a><a aria-label="🦵 Wednesday — Leg day" href="#wednesday"><span aria-hidden="true" class="nav-emoji">🦵</span> <span>Wed</span><small>Wednesday</small></a><a aria-label="🏋️ Thursday — Upper-body day" href="#thursday"><span aria-hidden="true" class="nav-emoji">🏋️</span> <span>Thu</span><small>Thursday</small></a><a aria-label="❤️ Friday — Cardio &amp; mobility" href="#friday"><span aria-hidden="true" class="nav-emoji">❤️</span> <span>Fri</span><small>Friday</small></a><a aria-label="🧘 Saturday — Recovery day" href="#saturday"><span aria-hidden="true" class="nav-emoji">🧘</span> <span>Sat</span><small>Saturday</small></a></nav></div><div aria-label="Workout day icons" class="day-icon-legend">
+</header><div class="navbox"><div class="nav-caption">WORKOUT</div><nav aria-label="Jump to workout day" class="daynav"><a aria-label="💪 Sunday — Push-up day" href="#sunday"><span aria-hidden="true" class="nav-emoji">💪</span> <span>Sun</span><small>Sunday</small></a><a aria-label="🧗 Monday — Pull-up day" href="#monday"><span aria-hidden="true" class="nav-emoji">🧗</span> <span>Mon</span><small>Monday</small></a><a aria-label="🚶 Tuesday — Walk &amp; core day" href="#tuesday"><span aria-hidden="true" class="nav-emoji">🚶</span> <span>Tue</span><small>Tuesday</small></a><a aria-label="🦵 Wednesday — Leg day" href="#wednesday"><span aria-hidden="true" class="nav-emoji">🦵</span> <span>Wed</span><small>Wednesday</small></a><a aria-label="🏋️ Thursday — Upper-body day" href="#thursday"><span aria-hidden="true" class="nav-emoji">🏋️</span> <span>Thu</span><small>Thursday</small></a><a aria-label="❤️ Friday — Cardio &amp; mobility" href="#friday"><span aria-hidden="true" class="nav-emoji">❤️</span> <span>Fri</span><small>Friday</small></a><a aria-label="🧘 Saturday — Recovery day" href="#saturday"><span aria-hidden="true" class="nav-emoji">🧘</span> <span>Sat</span><small>Saturday</small></a></nav><div class="nav-caption weekly-caption">WEEKLY TASKS</div><nav aria-label="Jump to weekly tasks" class="daynav task-daynav">
+<a href="#tasks-sunday"><span>Sun</span><small>Sunday</small></a><a href="#tasks-monday"><span>Mon</span><small>Monday</small></a><a href="#tasks-tuesday"><span>Tue</span><small>Tuesday</small></a><a href="#tasks-wednesday"><span>Wed</span><small>Wednesday</small></a><a href="#tasks-thursday"><span>Thu</span><small>Thursday</small></a><a href="#tasks-friday"><span>Fri</span><small>Friday</small></a><a href="#tasks-saturday"><span>Sat</span><small>Saturday</small></a>
+</nav></div><div aria-label="Workout day icons" class="day-icon-legend">
 <span>💪 Push</span><span>🧗 Pull</span><span>🚶 Light cardio</span><span>🦵 Legs</span>
 <span>🏋️ Upper body</span><span>❤️ Mobility</span><span>🧘 Recovery</span>
 </div>
@@ -754,12 +804,106 @@ button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #d6a9
 <strong>Desk-work habit</strong>
 <p>During your shift, stand and move for 2–3 minutes every 30–60 minutes where practical. These short breaks help reduce long uninterrupted sitting, but still aim to build towards 150 minutes of moderate cardio each week. Keep your 7–8 hours of sleep after night shift.</p>
 </div>
+
+<section class="task-hub" id="daily-tasks">
+  <div class="task-hub-head"><div><span class="task-kicker">EVERY DAY</span><h2>Daily Tasks</h2><p>Small routines to keep your day on track.</p></div><button class="task-reset" type="button" data-reset-scope="daily">Reset today</button></div>
+  <div class="task-list daily-list" data-task-scope="daily">
+    <label class="task-row"><input type="checkbox" data-task-id="kg-enquiries"><span><b>KG — Enquiries & customer care</b><small>WhatsApp replies, customer DMs, follow-ups and orders</small></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="li-birthdays"><span><b>LI — Birthday wishes & important messages</b></span><em>10 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="prayers"><span><b>Prayers</b></span><em>5 times</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="exercise"><span><b>Exercise</b></span><em>20 min</em></label>
+  </div>
+</section>
+<section class="task-week" id="weekly-tasks">
+  <div class="task-week-title"><div><span class="task-kicker">PLAN • ENGAGE • GROW</span><h2>Weekly Tasks</h2><p>Select a day above to jump straight to its checklist.</p></div><button class="task-reset" type="button" data-reset-scope="weekly">Reset this week</button></div>
+  <section class="task-day" id="tasks-sunday"><h3>Sunday <small>Plan & ideate</small></h3><div class="task-list" data-task-scope="weekly">
+    <label class="task-row"><input type="checkbox" data-task-id="sun-kg-image"><span><b>KG — Book image post (1)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sun-ig-comments"><span><b>IG — Book comments</b></span><em>20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sun-reading"><span><b>Reading</b></span><em>15–20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sun-fb-fr"><span><b>FB Personal — Friend requests (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sun-kg-ideas"><span><b>KG — New book/content ideas</b></span><em>20 min</em></label>
+  </div></section>
+  <section class="task-day" id="tasks-monday"><h3>Monday <small>Create & connect</small></h3><div class="task-list" data-task-scope="weekly">
+    <label class="task-row"><input type="checkbox" data-task-id="mon-reel"><span><b>KG — Reel creation + cross-post</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="mon-ig-follow"><span><b>IG — Follow potential readers (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="mon-reading"><span><b>Reading</b></span><em>15–20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="mon-fb-comments"><span><b>FB Personal — Post comments</b></span><em>20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="mon-li-connections"><span><b>LI Personal — New connections (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="mon-li-followups"><span><b>LI — Connection follow-ups</b></span><em>15 min</em></label>
+  </div></section>
+  <section class="task-day" id="tasks-tuesday"><h3>Tuesday <small>Engage & build</small></h3><div class="task-list" data-task-scope="weekly">
+    <label class="task-row"><input type="checkbox" data-task-id="tue-reading"><span><b>Reading</b></span><em>15–20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="tue-li-book"><span><b>LI Personal — Book recommendation post (1)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="tue-fb-groups"><span><b>FB — Join new groups (2)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="tue-fb-pages"><span><b>FB — Follow new pages (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="tue-ig-community"><span><b>IG — Book community engagement</b></span><em>15 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="tue-li-birthday"><span><b>LI — Birthday replies → KG page follow request</b></span><em>15 min</em></label>
+  </div></section>
+  <section class="task-day" id="tasks-wednesday"><h3>Wednesday <small>Focus & grow</small></h3><div class="task-list" data-task-scope="weekly">
+    <label class="task-row"><input type="checkbox" data-task-id="wed-kg-li"><span><b>KG — LinkedIn company page post (1)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="wed-reader-dms"><span><b>LI Personal — Reader DMs (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="wed-reading"><span><b>Reading</b></span><em>15–20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="wed-fb-follow"><span><b>FB — Follow potential readers (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="wed-li-comments"><span><b>LI Personal — Professional post comments</b></span><em>20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="wed-li-connections"><span><b>LI Personal — New connections (10)</b></span></label>
+  </div></section>
+  <section class="task-day" id="tasks-thursday"><h3>Thursday <small>Participate & expand</small></h3><div class="task-list" data-task-scope="weekly">
+    <label class="task-row"><input type="checkbox" data-task-id="thu-discussion"><span><b>LI Group — Discussion / Poll (1)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="thu-ig-comments"><span><b>IG — Book comments</b></span><em>20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="thu-reading"><span><b>Reading</b></span><em>15–20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="thu-fb-groups"><span><b>FB Groups — Participation</b></span><em>20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="thu-invites"><span><b>LI Group — New member invitations (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="thu-member-engage"><span><b>LI Group — Member engagement</b></span><em>15 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="thu-followups"><span><b>LI — Connection follow-ups</b></span><em>15 min</em></label>
+  </div></section>
+  <section class="task-day" id="tasks-friday"><h3>Friday <small>Outreach & progress</small></h3><div class="task-list" data-task-scope="weekly">
+    <label class="task-row"><input type="checkbox" data-task-id="fri-book-post"><span><b>LI Personal — Educational book recommendation (1)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="fri-fb-comments"><span><b>FB Personal — Post comments</b></span><em>20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="fri-ig-follow"><span><b>IG — Follow potential readers (10)</b></span><em>10 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="fri-prospect"><span><b>KG — Customer prospecting through FB groups</b></span><em>20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="fri-job-search"><span><b>Job search + applications</b></span><em>45–60 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="fri-reading"><span><b>Reading</b></span><em>15–20 min</em></label>
+  </div></section>
+  <section class="task-day" id="tasks-saturday"><h3>Saturday <small>Plan ahead & explore</small></h3><div class="task-list" data-task-scope="weekly">
+    <label class="task-row"><input type="checkbox" data-task-id="sat-academic"><span><b>LI Group — Academic resource post (1)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sat-ig-dms"><span><b>IG — DMs and comments</b></span><em>15 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sat-reading"><span><b>Reading</b></span><em>15–20 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sat-li-connections"><span><b>LI Personal — New connections (10)</b></span></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sat-li-followups"><span><b>LI — Connection follow-ups</b></span><em>15 min</em></label>
+    <label class="task-row"><input type="checkbox" data-task-id="sat-ideas"><span><b>KG — Upcoming book and Reel ideas</b></span><em>20 min</em></label>
+  </div></section>
+</section>
+
 <div class="footer">General fitness education, not a medical diagnosis or personalised clinical diet. Stop if an exercise causes sharp pain. If you have a medical condition or have been advised to restrict protein, salt or fluids, check with a clinician.</div>
 </div>
 
 
 <script>
 (function(){const videos={"push up":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/push-ups.mp4","shoulder press":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-alternate-shoulder-press.mp4","dumbbell lateral raise":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-lateral-raise.mp4","pull up":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/band-assisted-pull-up.mp4","dumbbell row":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-bent-over-row.mp4","dumbbell biceps curl":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-biceps-curl.mp4","hammer curl":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-cross-body-hammer-curl.mp4","glute bridge":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/stretching-bridge-pose-setu-bandhasana.mp4","bodyweight squat":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/squat.mp4","reverse lunge":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-lunge.mp4","hanging knee raise":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/hanging-leg-hip-raise.mp4","calf raise":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/dumbbell-standing-calf-raise.mp4","side plank":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/side-bridge-side-plank.mp4","chin tuck":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/stretching-chin-to-chest-stretch.mp4","shoulder blade squeeze":"https://pub-585d42eb1aa64a67aedf483ec328d3fe.r2.dev/exercise-videos/male/stretching-band-warm-up-shoulder-stretch.mp4"};document.querySelectorAll('.demo-details[data-exercise]').forEach(panel=>{const video=panel.querySelector('video');const message=panel.querySelector('.male-demo-loading');panel.addEventListener('toggle',()=>{if(!panel.open){video.pause();return;}if(video.dataset.ready==='1')return;const url=videos[panel.dataset.exercise];if(!url){message.textContent='A verified male video is not available for this movement yet. Follow the written demonstration above.';return;}video.src=url;video.hidden=false;video.preload='metadata';video.dataset.ready='1';message.remove();video.addEventListener('timeupdate',()=>{if(video.currentTime>=20){video.pause();video.currentTime=20;}});video.addEventListener('error',()=>{const note=document.createElement('p');note.className='male-demo-loading';note.textContent='This video host could not deliver the clip. Please try again later.';video.replaceWith(note);},{once:true});});});})();
+</script>
+
+
+<script>
+(function(){
+  const pad=n=>String(n).padStart(2,'0');
+  const now=new Date();
+  const today=now.getFullYear()+"-"+pad(now.getMonth()+1)+"-"+pad(now.getDate());
+  const monday=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  const day=(monday.getDay()+6)%7;
+  monday.setDate(monday.getDate()-day);
+  const week=monday.getFullYear()+"-"+pad(monday.getMonth()+1)+"-"+pad(monday.getDate());
+  function keyFor(box){const scope=box.closest('[data-task-scope]')?.dataset.taskScope||'weekly';return 'azam-daily-'+scope+'-'+(scope==='daily'?today:week)+'-'+box.dataset.taskId;}
+  document.querySelectorAll('.task-list input[type="checkbox"][data-task-id]').forEach(box=>{
+    const key=keyFor(box);try{box.checked=localStorage.getItem(key)==='1';}catch(e){}
+    box.addEventListener('change',()=>{try{localStorage.setItem(key,box.checked?'1':'0');}catch(e){}});
+  });
+  document.querySelectorAll('[data-reset-scope]').forEach(button=>button.addEventListener('click',()=>{
+    const scope=button.dataset.resetScope;
+    document.querySelectorAll('.task-list[data-task-scope="'+scope+'"] input[type="checkbox"]').forEach(box=>{
+      box.checked=false;try{localStorage.removeItem(keyFor(box));}catch(e){}
+    });
+  }));
+})();
 </script>
 
 </body></html>
